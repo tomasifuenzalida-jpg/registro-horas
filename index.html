@@ -73,7 +73,7 @@
   .eyebrow { margin: 0 0 6px; font-size: 13px; font-weight: 500; letter-spacing: .02em; color: var(--text-muted); }
   h1 { margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -.01em; }
 
-  .card { background: var(--surface-1); border-radius: 14px; padding: 24px; margin-top: 24px; }
+  .card { background: var(--surface-1); border-radius: 14px; padding: 24px; margin-top: 16px; }
 
   /* Marcador */
   .hero { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
@@ -86,6 +86,7 @@
   .bar-meta strong { color: var(--text-primary); font-weight: 600; }
   .legend { list-style: none; margin: 20px 0 0; padding: 16px 0 0; border-top: 1px solid var(--line); display: grid; gap: 8px; }
   .legend li { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+  .legend li.empty { color: var(--text-muted); }
   .swatch { width: 10px; height: 10px; border-radius: 3px; flex: none; }
   .legend .val { margin-left: auto; padding-left: 16px; white-space: nowrap; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
 
@@ -97,7 +98,7 @@
   .reg-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 40px 0 12px; }
   h2 { margin: 0; font-size: 18px; font-weight: 600; }
   .sub { margin: 0; font-size: 13px; color: var(--text-muted); }
-  .filtro { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 8px; }
+  .filtro { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0 0; }
   .filtro button {
     font: inherit; font-size: 14px; color: var(--text-secondary); background: var(--chip);
     border: 1px solid transparent; border-radius: 999px; padding: 6px 14px; cursor: pointer;
@@ -108,8 +109,6 @@
   .filtro button[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); }
   .filtro button[aria-pressed="true"] .h { color: var(--surface-1); opacity: .75; }
   .filtro button:focus-visible { outline: 2px solid var(--text-primary); outline-offset: 2px; }
-  .resumen { margin: 4px 0 0; font-size: 14px; color: var(--text-secondary); }
-  .resumen strong { color: var(--text-primary); font-weight: 600; }
 
   .day { margin-top: 20px; }
   .day-head { display: flex; justify-content: space-between; align-items: baseline; padding: 0 4px 8px; }
@@ -174,6 +173,7 @@
 
   <footer>
     <p><strong>Cómo se miden:</strong> cada sesión de trabajo se cuenta desde que empieza hasta que se cierra. El trabajo hecho fuera de esas sesiones (llamadas, diseño, anuncios) se suma aparte y aparece marcado como tal. Si dos sesiones se cruzan en el tiempo, la hora se cuenta una sola vez.</p>
+    <p id="acuerdo-foot"></p>
     <p id="meta-foot"></p>
   </footer>
 </main>
@@ -200,7 +200,9 @@
     ? `${fmtHora(a)} – ${fmtHora(b)}`
     : `${fmtCorto(a)} ${fmtHora(a)} – ${fmtCorto(b)} ${fmtHora(b)}`;
   const fmtDia = (k) => keyToDate(k).toLocaleDateString('es-CL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-  const fmtMes = (m) => { const s = keyToDate(`${m}-01`).toLocaleDateString('es-CL', { month: 'long', year: 'numeric' }).replace(' de ', ' '); return s[0].toUpperCase() + s.slice(1); };
+  const nombreMes = (m) => keyToDate(`${m}-01`).toLocaleDateString('es-CL', { month: 'long' });
+  const fmtMes = (m) => { const s = `${nombreMes(m)} ${m.slice(0, 4)}`; return s[0].toUpperCase() + s.slice(1); };
+  const sigMes = (m) => { let [y, mm] = m.split('-').map(Number); mm++; if (mm > 12) { mm = 1; y++; } return `${y}-${String(mm).padStart(2, '0')}`; };
 
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
 
@@ -210,33 +212,64 @@
   const suma = (xs) => xs.filter(e => !e.anulada).reduce((s, e) => s + e.minutos, 0);
 
   let DATA = null;
-  let mes = (location.hash.match(/mes=(\d{4}-\d{2})/) || [])[1] || 'todos';
+  let mes = (location.hash.match(/mes=(\d{4}-\d{2})/) || [])[1] || null;
 
   function render() {
     const data = DATA;
     const app = document.getElementById('app');
     app.textContent = '';
-    const todas = (data.entradas || []).filter(e => Number.isFinite(e.minutos));
-    const entradas = todas.filter(e => !e.anulada && e.minutos > 0);
-    const metaH = data.acuerdo?.meta_horas || 0;
-    const metaMin = Math.round(metaH * 60);
-    const total = suma(entradas);
+    const horasMes = data.acuerdo?.horas_mes || 0;
+    const metaMin = Math.round(horasMes * 60);
+    const desde = data.acuerdo?.desde || '0000-00';
+    // El acuerdo es mensual desde `desde`: lo anterior no entra en el dashboard.
+    const todas = (data.entradas || []).filter(e => Number.isFinite(e.minutos) && monthKey(e) >= desde);
+    const vigentes = todas.filter(e => !e.anulada && e.minutos > 0);
 
-    // Color sigue al trabajo, en orden de primera aparición (cronológico), nunca por ranking.
+    // Meses: desde el inicio del acuerdo hasta el mes en curso (aunque esté vacío).
+    const hoy = localKey(new Date()).slice(0, 7);
+    const ultimo = [hoy, ...todas.map(monthKey)].sort().pop();
+    const meses = [];
+    for (let m = desde; m <= ultimo; m = sigMes(m)) meses.push(m);
+    meses.reverse();
+    if (!mes || !meses.includes(mes)) mes = meses.includes(hoy) ? hoy : meses[0];
+
+    // Color sigue al trabajo, en orden de primera aparición (cronológico), nunca por ranking ni por mes.
     const orden = [];
-    [...entradas].sort((a, b) => sortKey(a) - sortKey(b)).forEach(e => { if (!orden.includes(e.trabajo)) orden.push(e.trabajo); });
+    [...vigentes].sort((a, b) => sortKey(a) - sortKey(b)).forEach(e => { if (!orden.includes(e.trabajo)) orden.push(e.trabajo); });
     const color = (t) => { const i = orden.indexOf(t); return i < 0 ? 'var(--text-muted)' : `var(${SERIES[Math.min(i, SERIES.length - 1)]})`; };
-    const porTrabajo = orden.map(t => ({ t, min: suma(entradas.filter(e => e.trabajo === t)) }));
 
-    // ---- Marcador (siempre el acuerdo completo) ----
+    // ---- Selector de mes (arriba: gobierna todo lo de abajo) ----
+    const filtro = el('div', 'filtro');
+    filtro.setAttribute('role', 'group');
+    filtro.setAttribute('aria-label', 'Elegir mes');
+    meses.forEach(m => {
+      const b = el('button');
+      b.type = 'button';
+      b.setAttribute('aria-pressed', String(mes === m));
+      b.append(el('span', null, fmtMes(m)), el('span', 'h', fmtDur(suma(todas.filter(e => monthKey(e) === m)))));
+      b.addEventListener('click', () => {
+        mes = m;
+        history.replaceState(null, '', m === hoy ? location.pathname : `#mes=${m}`);
+        render();
+      });
+      filtro.append(b);
+    });
+    app.append(filtro);
+
+    const delMes = todas.filter(e => monthKey(e) === mes);
+    const vigMes = delMes.filter(e => !e.anulada && e.minutos > 0);
+    const total = suma(vigMes);
+    const porTrabajo = orden.map(t => ({ t, min: suma(vigMes.filter(e => e.trabajo === t)) })).filter(x => x.min > 0);
+
+    // ---- Marcador del mes ----
     const card = el('section', 'card marcador');
-    card.setAttribute('aria-label', 'Marcador de horas');
+    card.setAttribute('aria-label', `Marcador de ${fmtMes(mes)}`);
     const hero = el('div', 'hero');
-    hero.append(el('span', 'hero-value', fmtDur(total)), el('span', 'hero-of', `de ${metaH} h acordadas`));
+    hero.append(el('span', 'hero-value', fmtDur(total)), el('span', 'hero-of', `de ${horasMes} h en ${nombreMes(mes)}`));
 
     const bar = el('div', 'bar');
     bar.setAttribute('role', 'img');
-    bar.setAttribute('aria-label', `${fmtDur(total)} de ${metaH} horas`);
+    bar.setAttribute('aria-label', `${fmtDur(total)} de ${horasMes} horas en ${fmtMes(mes)}`);
     const escala = Math.max(metaMin, total);
     porTrabajo.forEach(({ t, min }) => {
       const s = el('div', 'seg');
@@ -248,14 +281,19 @@
     });
 
     const meta = el('div', 'bar-meta');
-    const pct = metaMin ? Math.min(100, Math.round((total / metaMin) * 100)) : 0;
-    const left = el('span'); left.append(el('strong', null, `${pct} %`), document.createTextNode(' completado'));
+    const pct = metaMin ? Math.round((total / metaMin) * 100) : 0;
+    const left = el('span'); left.append(el('strong', null, `${Math.min(pct, 100)} %`), document.createTextNode(' completado'));
     let right;
-    if (total >= metaMin) right = el('strong', null, '✓ Horas acordadas completas');
-    else { right = el('span'); right.append(document.createTextNode('Quedan '), el('strong', null, fmtDur(metaMin - total))); }
+    if (total >= metaMin) {
+      right = el('strong', null, total > metaMin ? `✓ ${horasMes} h completas · ${fmtDur(total - metaMin)} extra` : `✓ ${horasMes} h completas`);
+    } else {
+      right = el('span');
+      right.append(document.createTextNode(mes < hoy ? 'Faltaron ' : 'Quedan '), el('strong', null, fmtDur(metaMin - total)));
+    }
     meta.append(left, right);
 
     const legend = el('ul', 'legend');
+    if (!porTrabajo.length) legend.append(el('li', 'empty', 'Sin horas registradas este mes.'));
     porTrabajo.forEach(({ t, min }) => {
       const li = el('li');
       const sw = el('span', 'swatch'); sw.style.background = color(t);
@@ -265,49 +303,18 @@
     card.append(hero, bar, meta, legend);
     app.append(card);
 
-    // ---- Filtro por mes ----
-    const meses = [...new Set(todas.map(monthKey))].sort().reverse();
-    if (mes !== 'todos' && !meses.includes(mes)) mes = 'todos';
-
+    // ---- Registro del mes, por día ----
     const head = el('div', 'reg-head');
-    head.append(el('h2', null, 'Registro'), el('p', 'sub', 'Horarios en hora de Madrid.'));
+    head.append(el('h2', null, `Registro de ${nombreMes(mes)}`), el('p', 'sub', 'Horarios en hora de Madrid.'));
     app.append(head);
 
-    const filtro = el('div', 'filtro');
-    filtro.setAttribute('role', 'group');
-    filtro.setAttribute('aria-label', 'Filtrar por mes');
-    const boton = (valor, texto, min) => {
-      const b = el('button');
-      b.type = 'button';
-      b.setAttribute('aria-pressed', String(mes === valor));
-      b.append(el('span', null, texto), el('span', 'h', fmtDur(min)));
-      b.addEventListener('click', () => {
-        mes = valor;
-        history.replaceState(null, '', valor === 'todos' ? location.pathname : `#mes=${valor}`);
-        render();
-      });
-      return b;
-    };
-    filtro.append(boton('todos', 'Todos', total));
-    meses.forEach(m => filtro.append(boton(m, fmtMes(m), suma(todas.filter(e => monthKey(e) === m)))));
-    app.append(filtro);
-
-    const visibles = mes === 'todos' ? todas : todas.filter(e => monthKey(e) === mes);
-    const vigentes = visibles.filter(e => !e.anulada);
-    const resumen = el('p', 'resumen');
-    resumen.append(document.createTextNode(mes === 'todos' ? 'Todo el acuerdo: ' : `${fmtMes(mes)}: `),
-      el('strong', null, fmtDur(suma(vigentes))),
-      document.createTextNode(` en ${vigentes.length} ${vigentes.length === 1 ? 'registro' : 'registros'}`));
-    app.append(resumen);
-
-    // ---- Registro por día ----
     const dias = new Map();
-    [...visibles].sort((a, b) => sortKey(b) - sortKey(a)).forEach(e => {
+    [...delMes].sort((a, b) => sortKey(b) - sortKey(a)).forEach(e => {
       const k = dayKey(e);
       if (!dias.has(k)) dias.set(k, []);
       dias.get(k).push(e);
     });
-    if (!dias.size) app.append(el('p', 'vacio', 'Sin registros en este mes.'));
+    if (!dias.size) app.append(el('p', 'vacio', 'Todavía no hay registros este mes.'));
 
     for (const [k, items] of dias) {
       const day = el('section', 'day');
@@ -338,6 +345,8 @@
       app.append(day);
     }
 
+    document.getElementById('acuerdo-foot').textContent =
+      `El acuerdo es de ${horasMes} horas al mes, desde ${nombreMes(desde)} de ${desde.slice(0, 4)}.`;
     if (data.actualizado) {
       const d = new Date(data.actualizado);
       const min = Math.max(0, Math.round((Date.now() - d.getTime()) / 60000));
