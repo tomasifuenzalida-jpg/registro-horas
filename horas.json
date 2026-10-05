@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-05T14:15:20Z",
+  "actualizado": "2026-10-05T15:02:29Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -42,6 +42,18 @@
       "minutos": 67,
       "sesion": "ca1e24bf",
       "registrado_en": "2026-10-05T14:15:20Z"
+    },
+    {
+      "id": "65c168f1-202610051501",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Registré la reunión con Matías y Zauri, ordené el nuevo alcance de BENATIVE (redes, ads y web nueva) y preparé la investigación para construir la web.",
+      "fecha": "2026-10-05",
+      "inicio": "2026-10-05T14:36:55Z",
+      "fin": "2026-10-05T15:01:24Z",
+      "minutos": 24,
+      "sesion": "65c168f1",
+      "registrado_en": "2026-10-05T15:02:29Z"
     }
   ]
 }
