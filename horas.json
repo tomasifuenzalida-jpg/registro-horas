@@ -4,6 +4,20 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-05T11:11:25Z",
-  "entradas": []
+  "actualizado": "2026-10-05T11:21:09Z",
+  "entradas": [
+    {
+      "id": "5da94b18-202610051121",
+      "origen": "chat",
+      "trabajo": "Registro de horas",
+      "descripcion": "Armé el sistema que mide las horas de cada sesión de trabajo y este panel para que puedas seguirlas mes a mes.",
+      "fecha": "2026-10-05",
+      "inicio": "2026-10-05T10:35:37Z",
+      "fin": "2026-10-05T11:21:02Z",
+      "minutos": 45,
+      "sesion": "5da94b18",
+      "registrado_en": "2026-10-05T11:21:09Z",
+      "fuera_del_acuerdo": true
+    }
+  ]
 }
