@@ -4,15 +4,6 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-05T10:59:51Z",
-  "entradas": [
-    {
-      "id": "2026-08-21-dashboard-consultoria",
-      "origen": "registro previo",
-      "trabajo": "Dashboard Consultoría",
-      "descripcion": "Convertí el Dashboard Consultoría en una app de escritorio: motor más robusto, validación de los datos, instalador e instalación en tu Mac.",
-      "fecha": "2026-08-21",
-      "minutos": 150
-    }
-  ]
+  "actualizado": "2026-10-05T11:11:25Z",
+  "entradas": []
 }
