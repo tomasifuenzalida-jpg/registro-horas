@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-05T12:57:26Z",
+  "actualizado": "2026-10-05T14:15:20Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -30,6 +30,18 @@
       "minutos": 36,
       "sesion": "eddace40",
       "registrado_en": "2026-10-05T12:57:26Z"
+    },
+    {
+      "id": "ca1e24bf-202610051403",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Investigué las herramientas para analizar las redes de la marca de referencia de BENATIVE, dejé listo el plan de construcción y me reuní con el equipo sobre la nueva imagen.",
+      "fecha": "2026-10-05",
+      "inicio": "2026-10-05T12:56:39Z",
+      "fin": "2026-10-05T14:03:41Z",
+      "minutos": 67,
+      "sesion": "ca1e24bf",
+      "registrado_en": "2026-10-05T14:15:20Z"
     }
   ]
 }
