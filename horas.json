@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T13:07:13Z",
+  "actualizado": "2026-10-06T15:25:22Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -68,6 +68,18 @@
       "registrado_en": "2026-10-06T13:07:13Z",
       "minutos_solapados": 1,
       "ajuste_manual": true
+    },
+    {
+      "id": "e32a6ef0-202610061517",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Arranqué el diseño de la web nueva de BENATIVE: fijé las decisiones de diseño, analicé dos webs de referencia y dejé preparadas las sesiones de diseño, etiquetas y fotos de producto.",
+      "fecha": "2026-10-06",
+      "inicio": "2026-10-06T13:28:17Z",
+      "fin": "2026-10-06T15:17:42Z",
+      "minutos": 109,
+      "sesion": "e32a6ef0",
+      "registrado_en": "2026-10-06T15:25:22Z"
     }
   ]
 }
