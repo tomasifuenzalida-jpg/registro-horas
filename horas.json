@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-05T15:02:29Z",
+  "actualizado": "2026-10-06T13:07:13Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -54,6 +54,20 @@
       "minutos": 24,
       "sesion": "65c168f1",
       "registrado_en": "2026-10-05T15:02:29Z"
+    },
+    {
+      "id": "872b5643-202610061305",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Investigué cómo construir la web nueva de BENATIVE: arquitectura con el checkout de Shopify, medición para anuncios, rendimiento en el celular y fechas de lanzamiento.",
+      "fecha": "2026-10-05",
+      "inicio": "2026-10-05T15:00:38Z",
+      "fin": "2026-10-06T13:05:39Z",
+      "minutos": 82,
+      "sesion": "872b5643",
+      "registrado_en": "2026-10-06T13:07:13Z",
+      "minutos_solapados": 1,
+      "ajuste_manual": true
     }
   ]
 }
