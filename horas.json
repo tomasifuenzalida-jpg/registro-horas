@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T15:25:22Z",
+  "actualizado": "2026-10-06T17:16:18Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -80,6 +80,19 @@
       "minutos": 109,
       "sesion": "e32a6ef0",
       "registrado_en": "2026-10-06T15:25:22Z"
+    },
+    {
+      "id": "4aeddc65-202610061622",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Investigué cómo producir con IA las imágenes de producto de la web (cápsula, frasco que gira y los 3 frascos) con la etiqueta exacta y dejé el flujo recomendado para decidir.",
+      "fecha": "2026-10-06",
+      "inicio": "2026-10-06T15:41:19Z",
+      "fin": "2026-10-06T16:22:12Z",
+      "minutos": 41,
+      "sesion": "4aeddc65",
+      "registrado_en": "2026-10-06T17:16:18Z",
+      "ajuste_manual": true
     }
   ]
 }
