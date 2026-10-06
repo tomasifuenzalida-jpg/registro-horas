@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T17:16:18Z",
+  "actualizado": "2026-10-06T17:18:36Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -93,6 +93,18 @@
       "sesion": "4aeddc65",
       "registrado_en": "2026-10-06T17:16:18Z",
       "ajuste_manual": true
+    },
+    {
+      "id": "47d800fd-202610061717",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Definí la dirección visual de la web nueva de BENATIVE y armé su sistema de diseño (colores, letra, espacios y piezas) para computador y celular.",
+      "fecha": "2026-10-06",
+      "inicio": "2026-10-06T15:41:21Z",
+      "fin": "2026-10-06T17:17:22Z",
+      "minutos": 96,
+      "sesion": "47d800fd",
+      "registrado_en": "2026-10-06T17:18:36Z"
     }
   ]
 }
