@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T17:18:36Z",
+  "actualizado": "2026-10-06T17:22:58Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -105,6 +105,19 @@
       "minutos": 96,
       "sesion": "47d800fd",
       "registrado_en": "2026-10-06T17:18:36Z"
+    },
+    {
+      "id": "f30765d4-202610061722",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Diseñé las etiquetas nuevas de BENATIVE: bocetos, la etiqueta completa con los datos reales, un PDF para el equipo y el frasco en 3D con el barniz simulado.",
+      "fecha": "2026-10-06",
+      "inicio": "2026-10-06T14:59:47Z",
+      "fin": "2026-10-06T17:22:29Z",
+      "minutos": 29,
+      "sesion": "f30765d4",
+      "registrado_en": "2026-10-06T17:22:58Z",
+      "minutos_solapados": 114
     }
   ]
 }
