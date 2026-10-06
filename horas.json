@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T17:22:58Z",
+  "actualizado": "2026-10-06T17:33:39Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -102,9 +102,10 @@
       "fecha": "2026-10-06",
       "inicio": "2026-10-06T15:41:21Z",
       "fin": "2026-10-06T17:17:22Z",
-      "minutos": 96,
+      "minutos": 55,
       "sesion": "47d800fd",
-      "registrado_en": "2026-10-06T17:18:36Z"
+      "registrado_en": "2026-10-06T17:18:36Z",
+      "minutos_solapados": 41
     },
     {
       "id": "f30765d4-202610061722",
