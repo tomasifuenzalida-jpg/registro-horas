@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T17:33:39Z",
+  "actualizado": "2026-10-06T17:58:09Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -119,6 +119,18 @@
       "sesion": "f30765d4",
       "registrado_en": "2026-10-06T17:22:58Z",
       "minutos_solapados": 114
+    },
+    {
+      "id": "20618c4c-202610061757",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Agregué al visor 3D del frasco un control para achicar o agrandar BE NATIVE, siempre alineado con el nombre del suplemento, y dejé la flor en la esquina como vista inicial.",
+      "fecha": "2026-10-06",
+      "inicio": "2026-10-06T17:40:17Z",
+      "fin": "2026-10-06T17:57:29Z",
+      "minutos": 17,
+      "sesion": "20618c4c",
+      "registrado_en": "2026-10-06T17:58:09Z"
     }
   ]
 }
