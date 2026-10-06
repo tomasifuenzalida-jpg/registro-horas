@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T17:58:09Z",
+  "actualizado": "2026-10-06T18:24:05Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -131,6 +131,19 @@
       "minutos": 17,
       "sesion": "20618c4c",
       "registrado_en": "2026-10-06T17:58:09Z"
+    },
+    {
+      "id": "8edf1252-202610061823",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Armé el prototipo navegable del inicio de la web nueva de BENATIVE, en computador y celular: cápsula que se abre con el scroll, menú, carro y los datos de cada frasco según la etiqueta.",
+      "fecha": "2026-10-06",
+      "inicio": "2026-10-06T17:40:38Z",
+      "fin": "2026-10-06T18:23:33Z",
+      "minutos": 26,
+      "sesion": "8edf1252",
+      "registrado_en": "2026-10-06T18:24:05Z",
+      "minutos_solapados": 17
     }
   ]
 }
