@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-07T16:57:24Z",
+  "actualizado": "2026-10-07T17:55:53Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -168,6 +168,18 @@
       "minutos": 164,
       "sesion": "9a7abed9",
       "registrado_en": "2026-10-07T16:57:24Z"
+    },
+    {
+      "id": "be9f3a43-202610071743",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Avancé el prototipo de la web de BENATIVE: el frasco gira con su etiqueta real al pasar el cursor, la etiqueta quedó a su tamaño real y el pack tiene fondo nuevo.",
+      "fecha": "2026-10-07",
+      "inicio": "2026-10-07T17:01:08Z",
+      "fin": "2026-10-07T17:43:07Z",
+      "minutos": 42,
+      "sesion": "be9f3a43",
+      "registrado_en": "2026-10-07T17:55:53Z"
     }
   ]
 }
