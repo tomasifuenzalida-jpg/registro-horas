@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-06T18:24:05Z",
+  "actualizado": "2026-10-07T13:55:40Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -144,6 +144,18 @@
       "sesion": "8edf1252",
       "registrado_en": "2026-10-06T18:24:05Z",
       "minutos_solapados": 17
+    },
+    {
+      "id": "6b6e6e1d-202610071355",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Avancé el prototipo de la web nueva de BENATIVE: cápsula animada, productos para comprar, artículos reales del blog, pack de los 3 frascos con sus datos y fotos provisionales.",
+      "fecha": "2026-10-07",
+      "inicio": "2026-10-07T12:50:37Z",
+      "fin": "2026-10-07T13:55:03Z",
+      "minutos": 64,
+      "sesion": "6b6e6e1d",
+      "registrado_en": "2026-10-07T13:55:40Z"
     }
   ]
 }
