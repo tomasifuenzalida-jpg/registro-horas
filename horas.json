@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-07T13:55:40Z",
+  "actualizado": "2026-10-07T16:57:24Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -156,6 +156,18 @@
       "minutos": 64,
       "sesion": "6b6e6e1d",
       "registrado_en": "2026-10-07T13:55:40Z"
+    },
+    {
+      "id": "9a7abed9-202610071656",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Avancé el prototipo de la web de BENATIVE: foto del inicio, fotos de los artículos, tarjetas de los productos y fotos de producto hechas con IA con la etiqueta real.",
+      "fecha": "2026-10-07",
+      "inicio": "2026-10-07T14:12:32Z",
+      "fin": "2026-10-07T16:56:33Z",
+      "minutos": 164,
+      "sesion": "9a7abed9",
+      "registrado_en": "2026-10-07T16:57:24Z"
     }
   ]
 }
