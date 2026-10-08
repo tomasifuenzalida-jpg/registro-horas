@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-08T16:35:22Z",
+  "actualizado": "2026-10-08T17:16:01Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -204,6 +204,18 @@
       "minutos": 65,
       "sesion": "4d9068ee",
       "registrado_en": "2026-10-08T16:35:22Z"
+    },
+    {
+      "id": "234919d2-202610081715",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Encontré por qué el frasco de las fotos de producto de BENATIVE se ve pegado a la escena y dejé listo el plan de 9 fotos nuevas para las preguntas frecuentes de las fichas.",
+      "fecha": "2026-10-08",
+      "inicio": "2026-10-08T17:02:34Z",
+      "fin": "2026-10-08T17:15:52Z",
+      "minutos": 13,
+      "sesion": "234919d2",
+      "registrado_en": "2026-10-08T17:16:01Z"
     }
   ]
 }
