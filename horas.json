@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-07T17:55:53Z",
+  "actualizado": "2026-10-08T15:23:37Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -180,6 +180,18 @@
       "minutos": 42,
       "sesion": "be9f3a43",
       "registrado_en": "2026-10-07T17:55:53Z"
+    },
+    {
+      "id": "69d1c086-202610081518",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Armé las fichas de producto de los 3 suplementos (frasco que gira, fotos, tabla nutricional, packs), la barra fija de compra y el panel «Lo esencial» del prototipo de la web de BENATIVE.",
+      "fecha": "2026-10-08",
+      "inicio": "2026-10-08T13:10:37Z",
+      "fin": "2026-10-08T15:18:34Z",
+      "minutos": 128,
+      "sesion": "69d1c086",
+      "registrado_en": "2026-10-08T15:23:37Z"
     }
   ]
 }
