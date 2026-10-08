@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-08T17:16:01Z",
+  "actualizado": "2026-10-08T17:23:48Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -216,6 +216,19 @@
       "minutos": 13,
       "sesion": "234919d2",
       "registrado_en": "2026-10-08T17:16:01Z"
+    },
+    {
+      "id": "15ea6dc7-202610081723",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Corregí la web nueva de BENATIVE: el frasco gira hasta la tabla nutricional, dato nuevo de magnesio en la evidencia, «Lo esencial» más compacto y fotos junto a las preguntas frecuentes",
+      "fecha": "2026-10-08",
+      "inicio": "2026-10-08T16:51:38Z",
+      "fin": "2026-10-08T17:23:35Z",
+      "minutos": 19,
+      "sesion": "15ea6dc7",
+      "registrado_en": "2026-10-08T17:23:48Z",
+      "minutos_solapados": 13
     }
   ]
 }
