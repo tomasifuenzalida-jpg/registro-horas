@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-08T15:23:37Z",
+  "actualizado": "2026-10-08T16:35:22Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -192,6 +192,18 @@
       "minutos": 128,
       "sesion": "69d1c086",
       "registrado_en": "2026-10-08T15:23:37Z"
+    },
+    {
+      "id": "4d9068ee-202610081634",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Corregí el prototipo de la web de BENATIVE: 3 fotos nuevas para «Lo esencial», los beneficios de cada suplemento en las fichas y datos investigados de Chile y del mundo",
+      "fecha": "2026-10-08",
+      "inicio": "2026-10-08T15:29:48Z",
+      "fin": "2026-10-08T16:34:56Z",
+      "minutos": 65,
+      "sesion": "4d9068ee",
+      "registrado_en": "2026-10-08T16:35:22Z"
     }
   ]
 }
