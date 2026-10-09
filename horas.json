@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-08T17:23:48Z",
+  "actualizado": "2026-10-09T14:39:24Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -229,6 +229,18 @@
       "sesion": "15ea6dc7",
       "registrado_en": "2026-10-08T17:23:48Z",
       "minutos_solapados": 13
+    },
+    {
+      "id": "5b4da7f4-202610091438",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Armé en la web de BENATIVE las páginas de productos, ciencia y cada artículo, y corregí el inicio: titular, pie, menú, botones y el cero de los números",
+      "fecha": "2026-10-09",
+      "inicio": "2026-10-09T11:55:57Z",
+      "fin": "2026-10-09T14:38:36Z",
+      "minutos": 163,
+      "sesion": "5b4da7f4",
+      "registrado_en": "2026-10-09T14:39:24Z"
     }
   ]
 }
