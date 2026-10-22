@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-09T14:39:24Z",
+  "actualizado": "2026-10-22T13:17:26Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -241,6 +241,19 @@
       "minutos": 163,
       "sesion": "5b4da7f4",
       "registrado_en": "2026-10-09T14:39:24Z"
+    },
+    {
+      "id": "08fa35f9-202610221315",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Armé en el prototipo de la web de BENATIVE las páginas de Nosotros, preguntas frecuentes, contacto, envíos, cambios, términos y privacidad, y sumé las fotos de Matías y Zauri.",
+      "fecha": "2026-10-21",
+      "inicio": "2026-10-21T14:28:45Z",
+      "fin": "2026-10-22T13:15:34Z",
+      "minutos": 60,
+      "sesion": "08fa35f9",
+      "registrado_en": "2026-10-22T13:17:26Z",
+      "ajuste_manual": true
     }
   ]
 }
