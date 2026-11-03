@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-10-22T13:17:26Z",
+  "actualizado": "2026-11-03T15:41:40Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -254,6 +254,18 @@
       "sesion": "08fa35f9",
       "registrado_en": "2026-10-22T13:17:26Z",
       "ajuste_manual": true
+    },
+    {
+      "id": "f8f2a59f-202611031528",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Corregí la web nueva de Be Native, redacté sus políticas de compra y privacidad, y definí con una revisión crítica cómo conectarla con Shopify.",
+      "fecha": "2026-11-03",
+      "inicio": "2026-11-03T14:17:22Z",
+      "fin": "2026-11-03T15:28:02Z",
+      "minutos": 71,
+      "sesion": "f8f2a59f",
+      "registrado_en": "2026-11-03T15:41:40Z"
     }
   ]
 }
