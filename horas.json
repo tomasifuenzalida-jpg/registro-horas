@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-04T15:56:28Z",
+  "actualizado": "2026-11-04T17:30:52Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -278,6 +278,18 @@
       "minutos": 100,
       "sesion": "4733afb0",
       "registrado_en": "2026-11-04T15:56:28Z"
+    },
+    {
+      "id": "0793092b-202611041729",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Cargué en Shopify los datos de las 3 fichas de Be Native y armé la ficha de producto de la web nueva; pasa las pruebas de diseño y de velocidad en celular.",
+      "fecha": "2026-11-04",
+      "inicio": "2026-11-04T16:03:40Z",
+      "fin": "2026-11-04T17:29:08Z",
+      "minutos": 85,
+      "sesion": "0793092b",
+      "registrado_en": "2026-11-04T17:30:52Z"
     }
   ]
 }
