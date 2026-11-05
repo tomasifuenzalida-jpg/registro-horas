@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-04T17:30:52Z",
+  "actualizado": "2026-11-05T17:57:48Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -290,6 +290,18 @@
       "minutos": 85,
       "sesion": "0793092b",
       "registrado_en": "2026-11-04T17:30:52Z"
+    },
+    {
+      "id": "ff2435dc-202611051514",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Avancé la web nueva de Be Native en Shopify: revisor automático del tema, catálogo y carro conectados a la tienda, datos para Google y las fichas de los packs, revisadas con Tomás.",
+      "fecha": "2026-11-05",
+      "inicio": "2026-11-05T12:28:08Z",
+      "fin": "2026-11-05T15:14:12Z",
+      "minutos": 166,
+      "sesion": "ff2435dc",
+      "registrado_en": "2026-11-05T17:57:48Z"
     }
   ]
 }
