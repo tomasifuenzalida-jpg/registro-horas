@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-05T17:57:48Z",
+  "actualizado": "2026-11-06T13:13:42Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -302,6 +302,18 @@
       "minutos": 166,
       "sesion": "ff2435dc",
       "registrado_en": "2026-11-05T17:57:48Z"
+    },
+    {
+      "id": "e61ce02d-202611061313",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Armé en el tema de prueba de la web de Be Native todas las páginas (inicio, productos, Ciencia, Nosotros, contacto, preguntas frecuentes y asesoría) y la galería de los packs.",
+      "fecha": "2026-11-06",
+      "inicio": "2026-11-06T11:44:43Z",
+      "fin": "2026-11-06T13:13:32Z",
+      "minutos": 89,
+      "sesion": "e61ce02d",
+      "registrado_en": "2026-11-06T13:13:42Z"
     }
   ]
 }
