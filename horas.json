@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-06T13:13:42Z",
+  "actualizado": "2026-11-10T19:31:02Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -314,6 +314,19 @@
       "minutos": 89,
       "sesion": "e61ce02d",
       "registrado_en": "2026-11-06T13:13:42Z"
+    },
+    {
+      "id": "be80259b-202611101711",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Rediseñé la página de Asesoría de Be Native con el calendario integrado y armé las fotos nuevas de los packs y de preguntas frecuentes para la web.",
+      "fecha": "2026-11-10",
+      "inicio": "2026-11-10T13:27:25Z",
+      "fin": "2026-11-10T17:11:10Z",
+      "minutos": 184,
+      "sesion": "be80259b",
+      "registrado_en": "2026-11-10T19:31:02Z",
+      "ajuste_manual": true
     }
   ]
 }
