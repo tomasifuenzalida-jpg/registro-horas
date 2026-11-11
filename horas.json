@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-10T19:31:02Z",
+  "actualizado": "2026-11-11T14:02:20Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -327,6 +327,18 @@
       "sesion": "be80259b",
       "registrado_en": "2026-11-10T19:31:02Z",
       "ajuste_manual": true
+    },
+    {
+      "id": "1790127f-202611111401",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Metí las fotos aprobadas en la web nueva de Be Native, dejé los textos editables y corregí packs, fichas, reseñas, asesoría y Ciencia según la revisión.",
+      "fecha": "2026-11-11",
+      "inicio": "2026-11-11T11:49:13Z",
+      "fin": "2026-11-11T14:01:24Z",
+      "minutos": 132,
+      "sesion": "1790127f",
+      "registrado_en": "2026-11-11T14:02:20Z"
     }
   ]
 }
