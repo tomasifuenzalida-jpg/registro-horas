@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-11T14:02:20Z",
+  "actualizado": "2026-11-12T12:37:18Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -339,6 +339,19 @@
       "minutos": 132,
       "sesion": "1790127f",
       "registrado_en": "2026-11-11T14:02:20Z"
+    },
+    {
+      "id": "9d4cf2e2-202611121225",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Revisé completa la web nueva de Be Native antes de publicarla: 181 problemas verificados en 34 páginas y la lista de lo que falta, con quién lo hace.",
+      "fecha": "2026-11-11",
+      "inicio": "2026-11-11T14:07:26Z",
+      "fin": "2026-11-12T12:25:49Z",
+      "minutos": 280,
+      "sesion": "9d4cf2e2",
+      "registrado_en": "2026-11-12T12:37:18Z",
+      "ajuste_manual": true
     }
   ]
 }
