@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-12T19:01:02Z",
+  "actualizado": "2026-11-12T20:14:56Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -377,6 +377,18 @@
       "sesion": "9c265bea",
       "registrado_en": "2026-11-12T19:01:02Z",
       "ajuste_manual": true
+    },
+    {
+      "id": "5c7ce875-202611122002",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Pulí la web nueva de Be Native: tarjetas y carruseles parejos, reseñas con el estilo de la marca, asesoría sin cookies al abrir, contacto más claro y limpieza del código.",
+      "fecha": "2026-11-12",
+      "inicio": "2026-11-12T19:17:54Z",
+      "fin": "2026-11-12T20:02:52Z",
+      "minutos": 45,
+      "sesion": "5c7ce875",
+      "registrado_en": "2026-11-12T20:14:56Z"
     }
   ]
 }
