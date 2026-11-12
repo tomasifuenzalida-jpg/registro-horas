@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-12T12:37:18Z",
+  "actualizado": "2026-11-12T13:40:57Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -352,6 +352,18 @@
       "sesion": "9d4cf2e2",
       "registrado_en": "2026-11-12T12:37:18Z",
       "ajuste_manual": true
+    },
+    {
+      "id": "dc644c38-202611121340",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Arreglé en la web nueva de Be Native el carro, los productos agotados, la página del carro, la búsqueda y el boletín, y dejé lista la lista de datos que faltan para lanzarla.",
+      "fecha": "2026-11-12",
+      "inicio": "2026-11-12T12:49:08Z",
+      "fin": "2026-11-12T13:40:29Z",
+      "minutos": 51,
+      "sesion": "dc644c38",
+      "registrado_en": "2026-11-12T13:40:57Z"
     }
   ]
 }
