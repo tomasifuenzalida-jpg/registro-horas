@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-12T13:40:57Z",
+  "actualizado": "2026-11-12T19:01:02Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -364,6 +364,19 @@
       "minutos": 51,
       "sesion": "dc644c38",
       "registrado_en": "2026-11-12T13:40:57Z"
+    },
+    {
+      "id": "9c265bea-202611121900",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Cargué en las políticas de la web nueva de Be Native las respuestas de Matías y armé y probé el programa que hace los cambios en la tienda el día del lanzamiento, con vuelta atrás.",
+      "fecha": "2026-11-12",
+      "inicio": "2026-11-12T14:07:55Z",
+      "fin": "2026-11-12T19:00:27Z",
+      "minutos": 55,
+      "sesion": "9c265bea",
+      "registrado_en": "2026-11-12T19:01:02Z",
+      "ajuste_manual": true
     }
   ]
 }
