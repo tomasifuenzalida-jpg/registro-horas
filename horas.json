@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-13T00:02:47Z",
+  "actualizado": "2026-11-13T18:38:57Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -402,6 +402,18 @@
       "sesion": "33ddc811",
       "registrado_en": "2026-11-13T00:02:47Z",
       "ajuste_manual": true
+    },
+    {
+      "id": "4c516fa1-202611131838",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Apliqué las correcciones de Matías y Zauri a la web de Be Native (preguntas, tabla, equipo) y rediseñé Nosotros y Ciencia, con portada nueva y el video del evento Vital de fondo.",
+      "fecha": "2026-11-13",
+      "inicio": "2026-11-13T17:00:56Z",
+      "fin": "2026-11-13T18:38:48Z",
+      "minutos": 98,
+      "sesion": "4c516fa1",
+      "registrado_en": "2026-11-13T18:38:57Z"
     }
   ]
 }
