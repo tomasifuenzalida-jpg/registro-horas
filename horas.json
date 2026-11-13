@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-12T20:14:56Z",
+  "actualizado": "2026-11-13T00:02:47Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -389,6 +389,19 @@
       "minutos": 45,
       "sesion": "5c7ce875",
       "registrado_en": "2026-11-12T20:14:56Z"
+    },
+    {
+      "id": "33ddc811-202611130002",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Corregí la web nueva de Be Native (productos, fichas, packs, asesoría, ciencia y menú del celular), sumé el banner de descuento y las fotos de la Vitamina C, y la publiqué para revisión.",
+      "fecha": "2026-11-12",
+      "inicio": "2026-11-12T20:19:53Z",
+      "fin": "2026-11-13T00:02:07Z",
+      "minutos": 149,
+      "sesion": "33ddc811",
+      "registrado_en": "2026-11-13T00:02:47Z",
+      "ajuste_manual": true
     }
   ]
 }
