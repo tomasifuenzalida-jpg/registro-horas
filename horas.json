@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-13T18:38:57Z",
+  "actualizado": "2026-11-15T17:28:29Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -414,6 +414,18 @@
       "minutos": 98,
       "sesion": "4c516fa1",
       "registrado_en": "2026-11-13T18:38:57Z"
+    },
+    {
+      "id": "e2f23cb7-202611132147",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Igualé el color de las tarjetas de suplementos de la página de Ciencia con las de Productos, lo subí a la web y revisé el menú del celular.",
+      "fecha": "2026-11-13",
+      "inicio": "2026-11-13T21:35:05Z",
+      "fin": "2026-11-13T21:47:23Z",
+      "minutos": 12,
+      "sesion": "e2f23cb7",
+      "registrado_en": "2026-11-15T17:28:29Z"
     }
   ]
 }
