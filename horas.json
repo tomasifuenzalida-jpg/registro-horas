@@ -4,7 +4,7 @@
     "horas_mes": 18,
     "desde": "2026-10"
   },
-  "actualizado": "2026-11-15T17:28:29Z",
+  "actualizado": "2026-11-17T18:29:25Z",
   "entradas": [
     {
       "id": "5da94b18-202610051121",
@@ -426,6 +426,19 @@
       "minutos": 12,
       "sesion": "e2f23cb7",
       "registrado_en": "2026-11-15T17:28:29Z"
+    },
+    {
+      "id": "40864d2a-202611171827",
+      "origen": "chat",
+      "trabajo": "BENATIVE",
+      "descripcion": "Arreglé el banner del 10 %, puse las fotos nuevas como principales en los productos, sumé el código al correo de bienvenida y activé el banner de cookies con el diseño de la web.",
+      "fecha": "2026-11-16",
+      "inicio": "2026-11-16T14:06:55Z",
+      "fin": "2026-11-17T18:27:21Z",
+      "minutos": 84,
+      "sesion": "40864d2a",
+      "registrado_en": "2026-11-17T18:29:25Z",
+      "ajuste_manual": true
     }
   ]
 }
